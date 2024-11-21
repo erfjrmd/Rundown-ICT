@@ -21,8 +21,3 @@ document.onkeydown = function (e) {
 if (window.location.protocol === 'view-source:') {
     window.location.href = '/404.html';  // Redirect to your 404 page
 }
-
-// Make the page visible after everything is loaded
-window.onload = function () {
-    document.documentElement.style.visibility = 'visible';
-};
