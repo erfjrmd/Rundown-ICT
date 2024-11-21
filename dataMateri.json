@@ -1,159 +1,244 @@
 {
-    "menu": [
-      {
-        "heading": "Materi minggu pertama",
-        "items": [
-          {
-            "title": "Hari 1: Pengenalan CorelDRAW",
-            "content": {
-              "durasi": "2 Jam",
-              "sections": [
-                {
-                  "title": "Pembukaan",
-                  "details": ["Penjelasan tujuan pembelajaran (10 menit)."]
-                },
-                {
-                  "title": "Materi",
-                  "details": [
-                    "Apa itu CorelDRAW dan fungsinya (15 menit).",
-                    "Mengenal interface CorelDRAW: Toolbar, Ruler, Property Bar, Dockers (30 menit)."
-                  ]
-                },
-                {
-                  "title": "Praktik",
-                  "details": [
-                    "Membuka dokumen baru.",
-                    "Menggunakan alat dasar: Rectangle, Ellipse, dan Polygon Tool (30 menit)."
-                  ]
-                },
-                {
-                  "title": "Penutup",
-                  "details": ["Q&A dan kesimpulan materi (15 menit)."]
-                }
-              ]
-            }
-          },
-          {
-            "title": "Hari 2: Menggambar Bentuk Dasar",
-            "content": {
-              "durasi": "2 Jam",
-              "sections": [
-                {
-                  "title": "Pembukaan",
-                  "details": ["Review materi sebelumnya (10 menit)."]
-                },
-                {
-                  "title": "Materi",
-                  "details": [
-                    "Memodifikasi bentuk: Shape Tool, Weld, Trim, Intersect (20 menit).",
-                    "Pengaturan warna: Fill Tool, Outline Tool (20 menit)."
-                  ]
-                },
-                {
-                  "title": "Praktik",
-                  "details": ["Membuat logo sederhana menggunakan bentuk dasar (60 menit)."]
-                }
-              ]
-            }
-          },
-          {
-            "title": "Hari 3: Manipulasi Objek dan Teks",
-            "content": {
-              "durasi": "2 Jam",
-              "sections": [
-                {
-                  "title": "Pembukaan",
-                  "details": ["Review hasil logo siswa (10 menit)."]
-                },
-                {
-                  "title": "Materi",
-                  "details": [
-                    "Menggunakan Text Tool: Artistic Text vs Paragraph Text (20 menit).",
-                    "Memodifikasi teks: Warp, Shadow, dan Align (20 menit)."
-                  ]
-                },
-                {
-                  "title": "Praktik",
-                  "details": ["Membuat desain kartu nama dengan teks dan bentuk dasar (60 menit)."]
-                }
-              ]
-            }
-          },
-          {
-            "title": "Hari 4: Efek dan Transformasi",
-            "content": {
-              "durasi": "2 Jam",
-              "sections": [
-                {
-                  "title": "Pembukaan",
-                  "details": ["Refleksi tentang fungsi desain grafis (10 menit)."]
-                },
-                {
-                  "title": "Materi",
-                  "details": [
-                    "Efek Transparansi, Gradient, dan PowerClip (30 menit).",
-                    "Mengatur tata letak menggunakan Grid dan Guidelines (20 menit)."
-                  ]
-                },
-                {
-                  "title": "Praktik",
-                  "details": ["Membuat poster sederhana dengan elemen efek (60 menit)."]
-                }
-              ]
-            }
-          },
-          {
-            "title": "Hari 5: Penugasan dan Review",
-            "content": {
-              "durasi": "2 Jam",
-              "sections": [
-                {
-                  "title": "Pembukaan",
-                  "details": ["Penjelasan tugas akhir (10 menit)."]
-                },
-                {
-                  "title": "Praktik",
-                  "details": [
-                    "Siswa membuat desain bebas (misalnya brosur, pamflet, atau logo) menggunakan fitur yang telah dipelajari (90 menit)."
-                  ]
-                },
-                {
-                  "title": "Penutup",
-                  "details": ["Presentasi hasil karya siswa dan umpan balik dari guru (20 menit)."]
-                }
-              ]
-            }
-          },
-          {
-            "title": "Hari 6: Pengayaan dan Evaluasi",
-            "content": {
-              "durasi": "2 Jam",
-              "sections": [
-                {
-                  "title": "Pembukaan",
-                  "details": ["Refleksi materi selama seminggu (10 menit)."]
-                },
-                {
-                  "title": "Evaluasi",
-                  "details": [
-                    "Quiz/Latihan singkat tentang fitur-fitur CorelDRAW (30 menit)."
-                  ]
-                },
-                {
-                  "title": "Diskusi",
-                  "details": [
-                    "Tanya jawab dan saran untuk pengembangan (30 menit)."
-                  ]
-                },
-                {
-                  "title": "Penutup",
-                  "details": ["Penyerahan tugas akhir dan penilaian umum (20 menit)."]
-                }
-              ]
-            }
+  "menu": [
+    {
+      "heading": "Materi Minggu Pertama (CorelDRAW X7)",
+      "items": [
+        {
+          "title": "Hari 1: Pengenalan Antarmuka CorelDRAW X7",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Penjelasan tentang workspace CorelDRAW (tools, menu, dan palet) (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Mengenal fitur-fitur utama: Toolbar, Properties Bar, Rulers, Grid, dan Guidelines (30 menit).",
+                  "Pengaturan dokumen baru (ukuran, orientasi, dan resolusi) (20 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuka dokumen baru dan mengenal antarmuka CorelDRAW (40 menit)."]
+              }
+            ]
           }
-        ]
-      }
-    ]
-  }
-  
+        },
+        {
+          "title": "Hari 2: Menggambar dengan Shape Tools",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Review materi sebelumnya (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Menggunakan shape tools (rectangle, ellipse, polygon, star, etc.) (30 menit).",
+                  "Mengubah dan memodifikasi bentuk dasar (20 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuat bentuk sederhana menggunakan Shape Tools (40 menit)."]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Hari 3: Penggunaan Drawing Tools",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Review hasil latihan gambar (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Menggunakan Freehand Tool dan Bezier Tool untuk menggambar bebas dan path (30 menit).",
+                  "Menggunakan Pen Tool untuk membuat garis dan kurva (20 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuat desain gambar bebas dengan Bezier dan Pen Tool (40 menit)."]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Hari 4: Warna dan Fill",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Mengenal tentang pengisian warna dan efek di CorelDRAW (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Menggunakan Color Palette dan Color Mixer (30 menit).",
+                  "Menggunakan Fill Tools (uniform, gradient, pattern) (30 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Mengubah warna objek dan menambahkan transparansi (40 menit)."]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Hari 5: Text dan Typography",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Penjelasan tentang pengaturan teks dalam desain (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Menggunakan Text Tool untuk menambahkan teks (30 menit).",
+                  "Mengatur font, ukuran, dan gaya teks (30 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuat desain teks pada kartu nama atau poster (40 menit)."]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Materi Minggu Kedua (Microsoft Office)",
+      "items": [
+        {
+          "title": "Hari 1: Pengenalan Microsoft Word",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Mengenal antarmuka Microsoft Word (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Membuat dan menyimpan dokumen Word (20 menit).",
+                  "Menggunakan fitur formatting teks (font, ukuran, warna, alignment) (30 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuat dokumen sederhana dengan teks yang diformat (40 menit)."]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Hari 2: Menggunakan Microsoft Excel",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Pengenalan spreadsheet dan sel di Excel (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Membuat dan menyunting tabel di Excel (30 menit).",
+                  "Penggunaan fungsi dasar (SUM, AVERAGE, COUNT, etc.) (30 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuat tabel dan menggunakan fungsi dasar (40 menit)."]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Hari 3: Presentasi dengan Microsoft PowerPoint",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Pengenalan antarmuka PowerPoint (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Membuat slide baru dan menambahkan elemen (teks, gambar, grafik) (30 menit).",
+                  "Menggunakan transisi dan animasi (30 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuat presentasi sederhana dengan animasi dan transisi (40 menit)."]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Hari 4: Penggunaan Microsoft Excel Lanjutan",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Pengenalan fungsi Excel lanjutan (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Menggunakan fungsi IF dan VLOOKUP (30 menit).",
+                  "Membuat chart dan grafik dari data (30 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membuat analisis data dengan Pivot Table (40 menit)."]
+              }
+            ]
+          }
+        },
+        {
+          "title": " Hari 5: Kolaborasi dan Penyimpanan",
+          "content": {
+            "durasi": "2 Jam",
+            "sections": [
+              {
+                "title": "Pembukaan",
+                "details": ["Menjelaskan kolaborasi menggunakan Microsoft Office (10 menit)."]
+              },
+              {
+                "title": "Materi",
+                "details": [
+                  "Menggunakan fitur Track Changes dan komentar di Word (30 menit).",
+                  "Menyimpan dokumen di OneDrive dan berbagi (30 menit)."
+                ]
+              },
+              {
+                "title": "Praktik",
+                "details": ["Membagikan dokumen melalui OneDrive dan menggunakan Microsoft Teams untuk kolaborasi (40 menit)."]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
