@@ -18,7 +18,7 @@ document.onkeydown = function (e) {
 };
 
 // Check if the page is being accessed via 'view-source:' and redirect to 404 page
-if (window.location.protocol === 'view-source:rundown-ict.vercel.app') {
+if (window.location.protocol === 'view-source:') {
     window.location.href = '/404.html';  // Redirect to your 404 page
 }
 
