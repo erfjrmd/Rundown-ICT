@@ -3650,7 +3650,8 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: var(--bs-nav-link-hover-color);
+  background: var(--bs-accordion-bg);
+  color: var(--bs-accordion-color) !important;
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -3740,6 +3741,14 @@ textarea.form-control-lg {
 }
 .tab-content > .active {
   display: block;
+}
+
+.fa-folder {
+  color: #000 !important;
+}
+
+.fa-angle-down {
+  color: #000 !important;
 }
 
 .navbar {

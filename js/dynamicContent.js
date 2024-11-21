@@ -1,64 +1,80 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Fetch the JSON file
-    fetch("dataMateri.json")
-      .then(response => response.json())
-      .then(data => {
-        // Populate the sidenav menu
-        const sidenavMenu = document.getElementById("sidenavMenu");
-        const contentTitle = document.getElementById("contentTitle");
-        const contentBody = document.getElementById("contentBody");
-  
-        data.menu.forEach(section => {
-          // Add heading
-          const heading = document.createElement("div");
-          heading.classList.add("sb-sidenav-menu-heading");
-          heading.textContent = section.heading;
-          sidenavMenu.appendChild(heading);
-  
-          // Add items
-          section.items.forEach((item, index) => {
-            const link = document.createElement("a");
-            link.classList.add("nav-link");
-            link.href = "#";
-  
-            // Create icon
-            const icon = document.createElement("i");
-            icon.classList.add("fa", "fa-tasks", "me-2");
-            icon.setAttribute("aria-hidden", "true");
-  
-            // Add icon and text to link
-            link.appendChild(icon);
-            link.appendChild(document.createTextNode(item.title));
-  
-            // Add click event listener
-            link.addEventListener("click", () => {
-              contentTitle.textContent = item.title;
-  
-              if (typeof item.content === "string") {
-                // If content is a string
-                contentBody.textContent = item.content;
-              } else if (typeof item.content === "object") {
-                // If content is an object
-                contentBody.innerHTML = `
-                  <p><strong>Durasi:</strong> ${item.content.durasi}</p>
-                  ${item.content.sections.map(section => `
-                    <h5>${section.title}</h5>
-                    <ul>
-                      ${section.details.map(detail => `<li>${detail}</li>`).join("")}
-                    </ul>
-                  `).join("")}
-                `;
-              }
-            });
-            sidenavMenu.appendChild(link);
-  
-            // Default display for the first item
-            if (index === 0) {
-              link.click();
-            }
+  fetch("dataMateri.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const sidenavMenu = document.getElementById("sidenavMenu");
+      const contentTitle = document.getElementById("contentTitle");
+      const contentBody = document.getElementById("contentBody");
+
+      data.menu.forEach((section, sectionIndex) => {
+        // Buat tombol dropdown untuk heading
+        const dropdownButton = document.createElement("a");
+        dropdownButton.href = "#";
+        dropdownButton.classList.add("nav-link", "collapsed");
+        dropdownButton.setAttribute("data-bs-toggle", "collapse");
+        dropdownButton.setAttribute("data-bs-target", `#menu${sectionIndex}`);
+        dropdownButton.setAttribute("aria-expanded", "false");
+        dropdownButton.setAttribute("aria-controls", `menu${sectionIndex}`);
+
+        // Tambahkan teks heading dan ikon
+        const icon = document.createElement("div");
+        icon.classList.add("sb-nav-link-icon");
+        const iconElem = document.createElement("i");
+        iconElem.classList.add("fas", "fa-folder");
+        icon.appendChild(iconElem);
+
+        dropdownButton.appendChild(icon);
+        dropdownButton.appendChild(document.createTextNode(section.heading));
+
+        const arrow = document.createElement("div");
+        arrow.classList.add("sb-sidenav-collapse-arrow");
+        const arrowIcon = document.createElement("i");
+        arrowIcon.classList.add("fas", "fa-angle-down");
+        arrow.appendChild(arrowIcon);
+
+        dropdownButton.appendChild(arrow);
+        sidenavMenu.appendChild(dropdownButton);
+
+        // Buat kontainer untuk daftar item dalam heading
+        const collapseDiv = document.createElement("div");
+        collapseDiv.classList.add("collapse");
+        collapseDiv.setAttribute("id", `menu${sectionIndex}`);
+        collapseDiv.setAttribute("data-bs-parent", "#sidenavAccordion");
+
+        const nestedNav = document.createElement("nav");
+        nestedNav.classList.add("sb-sidenav-menu-nested", "nav");
+
+        // Tambahkan items ke dalam nestedNav
+        section.items.forEach((item) => {
+          const itemLink = document.createElement("a");
+          itemLink.classList.add("nav-link");
+          itemLink.href = "#";
+          itemLink.textContent = item.title;
+
+          // Tambahkan event listener untuk konten utama
+          itemLink.addEventListener("click", () => {
+            contentTitle.textContent = item.title;
+            contentBody.innerHTML = `
+              <p><strong>Durasi:</strong> ${item.content.durasi}</p>
+              ${item.content.sections
+                .map(
+                  (section) => `
+                  <h5>${section.title}</h5>
+                  <ul>
+                    ${section.details.map((detail) => `<li>${detail}</li>`).join("")}
+                  </ul>
+                `
+                )
+                .join("")}
+            `;
           });
+
+          nestedNav.appendChild(itemLink);
         });
-      })
-      .catch(error => console.error("Error loading JSON data:", error));
-  });
-  
+
+        collapseDiv.appendChild(nestedNav);
+        sidenavMenu.appendChild(collapseDiv);
+      });
+    })
+    .catch((error) => console.error("Error loading JSON data:", error));
+});
